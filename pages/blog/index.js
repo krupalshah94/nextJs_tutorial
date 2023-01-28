@@ -1,9 +1,9 @@
+import Users from '../../components/user';
+
 function Blog({ users }) {
   return (
     <div>
-      {users.map((data) => {
-        return <p key={data.id}>{data.name}</p>;
-      })}
+      <Users users={users} />
     </div>
   );
 }
